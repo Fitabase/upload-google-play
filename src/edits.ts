@@ -87,7 +87,7 @@ export async function uploadToPlayStore(options: EditOptions, releaseFiles: stri
             auth: options.auth,
             editId: appEdit.data.id!,
             packageName: options.applicationId,
-            changesNotSentForReview: options.changesNotSentForReview
+            //changesNotSentForReview: options.changesNotSentForReview Error: Changes are sent for review automatically. The query parameter changesNotSentForReview must not be set.
         });
 
         // Simple check to see whether commit was successful
